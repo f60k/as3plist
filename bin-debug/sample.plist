@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>New item</key>
+	<data>
+	</data>
+	<key>arr_key</key>
+	<array>
+		<dict>
+			<key>arr_child_dic</key>
+			<string>null</string>
+		</dict>
+		<string>str_data</string>
+		<true/>
+		<integer>0</integer>
+		<array>
+			<string>111111</string>
+			<string>222222</string>
+		</array>
+	</array>
+	<key>date_key</key>
+	<date>2008-07-18T13:35:27Z</date>
+	<key>dic_key</key>
+	<dict>
+		<key>child_key</key>
+		<string>dic_child_data</string>
+	</dict>
+	<key>false_key</key>
+	<false/>
+	<key>num_key</key>
+	<integer>0</integer>
+	<key>num_key_2</key>
+	<real>0.23011999999999999</real>
+	<key>str_key</key>
+	<string>Hello</string>
+	<key>true_key</key>
+	<true/>
+</dict>
+</plist>
