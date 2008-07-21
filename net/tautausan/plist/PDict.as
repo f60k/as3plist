@@ -47,25 +47,24 @@ package net.tautausan.plist
 			
 			if(!data)
 			{
-				var i:uint;
-				var length:uint=x.*.length();
 				var dic:Object=new Object();
 				var key:XML;
-	
-				for(i=0;i<length;i++)
+				var node:XML;
+				for each(node in x.*)
 				{
-					if(x.*[i].name()=="key")
+					if(node.name()=="key")
 					{
-						key=x.*[i];
+						key=node;
 					}
 					else
 					{
 						if(key)
 						{
-							dic[key]=ParseUtils.valueFromXML(x.*[i]);
+							dic[key]=ParseUtils.valueFromXML(node);
 						}
 					}
 				}
+				
 				data=dic;
 			}
 			return data;
