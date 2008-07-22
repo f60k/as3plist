@@ -42,11 +42,11 @@
 			{
 				if(x.name()=="real")
 				{
-					data=parseFloat(x.toString());
+					return parseFloat(x.toString());
 				}
 				else if(x.name()=="integer")
 				{
-					data=parseInt(x.toString(), 10);
+					return parseInt(x.toString(), 10);
 				}
 			}
 			return data;

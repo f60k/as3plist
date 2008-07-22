@@ -50,7 +50,7 @@
 					arr.push(ParseUtils.valueFromXML(x.*[i]));
 				}
 
-				data=arr;
+				return arr;
 			}
 			return data;
 		}

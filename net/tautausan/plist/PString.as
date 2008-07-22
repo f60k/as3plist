@@ -39,7 +39,7 @@
 		{
 			if(!data)
 			{
-				data=x.toString();
+				return x.toString();
 			}
 			return data;
 		}

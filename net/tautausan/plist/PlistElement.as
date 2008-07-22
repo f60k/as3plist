@@ -39,9 +39,11 @@
 		public function PlistElement(x:XML)
 		{
 			this.x=x;
+			this.data=object;
 		}
-				
-		override flash_proxy function getProperty(name:*):* {
+		
+		override flash_proxy function getProperty(name:*):* 
+		{
 			
 			var data:* = this.object;
 			
@@ -54,27 +56,27 @@
 				
 		public function toString():String
 		{
-			if(!data)
+			if(object)
 			{
-				object.toString();
+				return object.toString();
 			}
-			return data.toString();
+			return "[Object PlistElement]";
 		}
 		
 		public function set xml(x:XML):void
 		{
-			data=null;
 			this.x=x;
+			this.data=object;
 		}
 		
 		public function get xml():XML
 		{
-			return x;
+			return this.x;
 		}
 		
 		public function get object():*
 		{
-			return data;
+			return this.data;
 		}
 
 	}

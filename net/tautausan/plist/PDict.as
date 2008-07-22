@@ -64,8 +64,7 @@ package net.tautausan.plist
 						}
 					}
 				}
-				
-				data=dic;
+				return dic;
 			}
 			return data;
 		}

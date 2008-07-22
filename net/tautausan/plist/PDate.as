@@ -76,7 +76,7 @@
 					hh = nn = ss = 0;
 				}
 	
-				data = new Date(yyyy,mm-1,dd,hh,nn,ss);
+				return new Date(yyyy,mm-1,dd,hh,nn,ss);
 			}
 			return data;
 		}

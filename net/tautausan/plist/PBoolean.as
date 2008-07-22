@@ -43,11 +43,11 @@
 			
 				if(x.name()=="true")
 				{
-					data=true;
+					return true;
 				}
 				else if(x.name()=="false")
 				{
-					data=false;
+					return false;
 				}
 			}
 			return data;
