@@ -35,6 +35,14 @@
 			super(x);
 		}
 		
+		override public function toString():String
+		{
+			if(object)
+			{
+				return object.toString();
+			}
+			return "0";
+		}
 		
 		override public function get object():*
 		{
