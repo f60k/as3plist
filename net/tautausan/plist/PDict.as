@@ -36,11 +36,6 @@ package net.tautausan.plist
 		{
 			super(x);
 		}
-	
-		override public function toString():String
-		{
-			return "[object PDict]";
-		}
 		
 		override public function get object():*
 		{

@@ -53,14 +53,16 @@
 			}
 			return null;
 		}
-				
-		public function toString():String
+		
+		override flash_proxy function callProperty(name:*, ... rest):*
 		{
-			if(object)
+			var data:* = this.object;
+			
+			if(rest.length<1)
 			{
-				return object.toString();
+				return data[name]();
 			}
-			return "[Object PlistElement]";
+			return data[name](rest);
 		}
 		
 		public function set xml(x:XML):void

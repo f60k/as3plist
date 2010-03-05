@@ -35,15 +35,6 @@
 			super(x);
 		}
 		
-		override public function toString():String
-		{
-			if(object)
-			{
-				return object.toString();
-			}
-			return "";
-		}
-		
 		override public function get object():*
 		{
 			if(!data)
