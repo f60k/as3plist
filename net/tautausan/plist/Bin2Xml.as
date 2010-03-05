@@ -183,10 +183,10 @@ package net.tautausan.plist
 				return 0;
 				
 				case 8:
-				return <boolean>false</boolean>;
+				return <false/>;
 				
 				case 9:
-				return <boolean>true</boolean>;
+				return <true/>;
 				
 				case 15:
 				return 15;
