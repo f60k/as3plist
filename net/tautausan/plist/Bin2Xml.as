@@ -265,9 +265,9 @@ package net.tautausan.plist
 				break;
 			}
 			var date:Date=new Date((n+978307200)*1000);
+			var tag:XML=<date>{formatDate(date.getUTCFullYear())}-{formatDate(date.getUTCMonth()+1)}-{formatDate(date.getUTCDate())}T{formatDate(date.getUTCHours())}:{formatDate(date.getUTCMinutes())}:{formatDate(date.getUTCSeconds())}Z</date>;
 			
-			return <date>{date.getFullYear()}-{date.getMonth()+1}-{date.getDate()}T{date.getHours()}:{date.getMinutes()}:{date.getSeconds()}Z</date>;
-			
+			return tag;
 		}
 		
 		private function readRAW(data:ByteArray, len:int):*
@@ -418,6 +418,15 @@ package net.tautausan.plist
 	        
 			return value;
 	        
+		}
+		
+		private function formatDate(n:Number):String
+		{
+			if(n<10)
+			{
+				return "0"+n.toString();
+			}
+			return n.toString();
 		}
 
 	}

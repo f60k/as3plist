@@ -76,7 +76,11 @@
 					hh = nn = ss = 0;
 				}
 	
-				return new Date(yyyy,mm-1,dd,hh,nn,ss);
+				var date:Date=new Date();
+				date.setUTCFullYear(yyyy,mm-1,dd);
+				date.setUTCHours(hh,nn,ss,0);
+				
+				return date;
 			}
 			return data;
 		}
