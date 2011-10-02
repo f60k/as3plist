@@ -1,4 +1,4 @@
-Introduction
+# Introduction #
 This is a small library to use plist files for flash contents.
 
 Details
@@ -8,7 +8,8 @@ XML based property list support
 plist 1.0 support
 access properties directly using dot syntax
 Binary based property list support (tentative)
-Getting Started
+
+# Getting Started #
 1. load plist file with URLLoader and prepare to capture event from URLLoader.
 
 public function init():void
@@ -24,7 +25,7 @@ private function onComplete(e:Event):void
         plist.parse(e.target.data);
         
 }
-For Binary Format
+# For Binary Format #
 Invoke getXML method before parse loaded data within onComplete method.
 
 public function init():void
@@ -40,7 +41,7 @@ private function onComplete(e:Event):void
         
 }
 
-Access Plist Node Value
+# Access Plist Node Value #
 Get value
 Use 'parent dot child' to reach parent's child element.
 
@@ -125,7 +126,7 @@ sample.plst
 </plist>
 
 
-CDATA
+# CDATA #
 CDATA directive is useful to write html tags in xml. You do not have to care about escape strings.
 
 <string>&lt;a href=&quot;http://www.google.com&quot;&gt;hello&lt;/a&gt;</string>
